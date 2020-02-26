@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "firebase-fileupload-app": {
+    "youtube-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/firebase-fileupload-app",
+            "outputPath": "dist/youtube-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "firebase-fileupload-app:build"
+            "browserTarget": "youtube-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "firebase-fileupload-app:build:production"
+              "browserTarget": "youtube-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "firebase-fileupload-app:build"
+            "browserTarget": "youtube-app:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "firebase-fileupload-app:serve"
+            "devServerTarget": "youtube-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "firebase-fileupload-app:serve:production"
+              "devServerTarget": "youtube-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "firebase-fileupload-app"
+  "defaultProject": "youtube-app"
 }
