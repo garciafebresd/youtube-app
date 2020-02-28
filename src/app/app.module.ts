@@ -8,16 +8,18 @@ import { AppComponent } from './app.component';
 //components
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-
 //services
 import { YoutubeService } from './services/youtube.service';
+//pipes
+import { VideoYoutubePipe } from './pipes/video-youtube.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    VideoYoutubePipe
   ],
   imports: [
     BrowserModule,
